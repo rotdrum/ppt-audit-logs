@@ -1,0 +1,40 @@
+{
+  "name": "default_templates_mongo_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "cross-env ENV_TYPE=dev jest --forceExit",
+    "start": "cross-env ENV_TYPE=prd node server.js",
+    "dev": "cross-env ENV_TYPE=dev nodemon server.js",
+    "dev:prd": "cross-env ENV_TYPE=prd nodemon server.js",
+    "dev:local": "cross-env ENV_TYPE=local nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "joi": "^17.13.1",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0",
+    "opossum": "^8.1.4",
+    "path": "^0.12.7",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.4"
+  }
+}
